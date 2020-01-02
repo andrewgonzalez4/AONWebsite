@@ -43,16 +43,16 @@ nav {
     color: lightslategray;
 }
 
-.burger {
-    display: none;
-}
-
 .burger div {
     width: 2.5rem;
     height: 0.3rem;
     margin: 0.5rem;
     background-color: rgba(255, 255, 255, 0.849);
     transition: all 0.3s ease;
+}
+
+.burger {
+    display: none;
 }
 
 @media screen and (max-width:1024px) {
@@ -90,6 +90,9 @@ nav {
     }
     .pic {
         width: 100vw;
+    }
+    body {
+        overflow-x: hidden;
     }
 }
 
@@ -130,6 +133,7 @@ nav {
     min-height: 92vh;
     background-image: url(./team.jpg);
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
