@@ -15,7 +15,11 @@ nav {
 }
 
 .logo {
-    color: white;
+    min-width: 18rem;
+    min-height: 5rem;
+    background-image: url(./AON\ Robotics\ Logo\ [Dark].png);
+    background-position: center;
+    background-size: cover;
 }
 
 .nav-links {
@@ -33,6 +37,10 @@ nav {
 
 .nav-links li {
     list-style: none;
+}
+
+.nav-links li a:hover {
+    color: lightslategray;
 }
 
 .burger {
@@ -77,6 +85,12 @@ nav {
         display: block;
         cursor: pointer;
     }
+    .container-info {
+        flex-wrap: wrap;
+    }
+    .pic {
+        width: 100vw;
+    }
 }
 
 .nav-active {
@@ -104,4 +118,23 @@ nav {
 
 .toggle .line3 {
     transform: rotate(45deg) translate(-0.5rem, -0.6rem);
+}
+
+.container-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.pic {
+    min-width: 70vw;
+    min-height: 92vh;
+    background-image: url(./team.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.info {
+    min-width: 30vw;
+    min-height: 92vh;
+    background-color: lightslategray;
 }
