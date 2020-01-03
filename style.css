@@ -12,6 +12,9 @@ nav {
     min-height: 10vh;
     background-color: rgb(36, 36, 36);
     font-family: 'Poppins', sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .logo {
@@ -137,7 +140,7 @@ nav {
 @keyframes navLinkFade {
     from {
         opacity: 0;
-        transform: translateX(5px);
+        transform: translateX(0.5rem);
     }
     to {
         opacity: 1;
