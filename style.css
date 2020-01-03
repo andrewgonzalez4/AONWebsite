@@ -56,6 +56,24 @@ nav {
     display: none;
 }
 
+.container-info {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.pic {
+    min-height: 90vh;
+    background-image: url(./team.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.info {
+    min-height: 90vh;
+    background-color: lightslategray;
+}
+
 @media screen and (max-width:1024px) {
     .nav-links {
         width: 60%;
@@ -88,6 +106,8 @@ nav {
         cursor: pointer;
     }
     .container-info {
+        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
     }
     .pic {
@@ -120,24 +140,4 @@ nav {
 
 .toggle .line3 {
     transform: rotate(45deg) translate(-0.5rem, -0.6rem);
-}
-
-.container-info {
-    display: flex;
-    flex-direction: row;
-}
-
-.pic {
-    min-width: 70vw;
-    min-height: 92vh;
-    background-image: url(./team.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.info {
-    min-width: 30vw;
-    min-height: 92vh;
-    background-color: lightslategray;
 }
