@@ -6,6 +6,7 @@
 }
 
 .grid-container {
+    padding-top: 12vh;
     display: grid;
     width: 100vw;
     height: 100vh;
