@@ -9,9 +9,10 @@
     display: grid;
     width: 100vw;
     height: 90vh;
-    position: absolute;
+    /* position: absolute; */
     top: 112px;
-    grid-template-areas: "a b c" "d e f";
+    /* grid-template-areas: "a b c" "d e f"; */
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
 }
 
 .grid-container img {
@@ -57,7 +58,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 6;
 }
 
 .logo {
@@ -176,10 +177,6 @@ nav {
     }
     .info {
         width: 100vw;
-    }
-    .grid-container {
-        display: flex;
-        flex-wrap: wrap;
     }
 }
 
